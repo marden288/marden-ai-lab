@@ -254,7 +254,6 @@ function PortfolioPage() {
   const [selectedProject, setSelectedProject] = useState(null);
   const [selectedCertificate, setSelectedCertificate] = useState(null);
   const [profileVideoRevealed, setProfileVideoRevealed] = useState(false);
-  const [heroVideoSource, setHeroVideoSource] = useState(liveProjectVideo);
   const cursorRef = useRef(null);
   const cursorTrailRef = useRef(null);
 
@@ -414,13 +413,12 @@ function PortfolioPage() {
                     <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(34,211,238,0.25),transparent_35%),radial-gradient(circle_at_bottom,_rgba(139,92,246,0.18),transparent_35%)]" />
                     <div className="relative aspect-[1.18] overflow-hidden rounded-[22px] border border-white/10 bg-[linear-gradient(135deg,#0d1728,#060d1a_50%,#0f1d2f)]">
                       <video
-                        src={heroVideoSource}
+                        src={liveProjectVideo}
                         autoPlay
                         muted
                         loop
                         playsInline
                         poster={profileImage}
-                        onError={() => setHeroVideoSource(profileVideo)}
                         className="hero-video h-full w-full object-cover"
                         aria-label="Project live feed video"
                       />

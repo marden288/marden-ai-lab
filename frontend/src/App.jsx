@@ -26,7 +26,7 @@ import {
 } from 'lucide-react';
 import { Link, Navigate, Route, Routes } from 'react-router-dom';
 import profileImage from './assets/profile/profile.jpg';
-import profileVideo from './assets/profile/profile.mp4';
+import profileVideo from './assets/profile/video.mp4';
 import resumeFile from './assets/profile/Resume (3).pdf';
 import liveProjectVideo from './assets/profile/video.mp4';
 import projectOne from './assets/projects/naruto.jpg';

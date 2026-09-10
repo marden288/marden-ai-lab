@@ -1,0 +1,13 @@
+{
+  "name": "marden-ai-lab",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "concurrently \"npm --prefix frontend run dev -- --host 0.0.0.0\" \"npm --prefix backend run dev\"",
+    "build": "npm --prefix frontend run build",
+    "start": "npm --prefix backend run start"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.0"
+  }
+}
